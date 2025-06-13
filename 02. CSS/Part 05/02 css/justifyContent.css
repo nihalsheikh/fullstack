@@ -1,0 +1,117 @@
+h1 {
+    text-align: center;
+}
+
+.box:nth-of-type(2n+1) {
+    background-color: lightsalmon;
+}
+
+.box:nth-of-type(2n) {
+    background-color: lightgreen;
+}
+
+.box:nth-of-type(3n) {
+    background-color: lightskyblue;
+}
+
+.flex-main {
+    width: 550px;
+    height: 180px;
+    background-color: wheat;
+    border: 2px solid maroon;
+}
+
+#flex-start {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+#start {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    border: 2px solid black;
+}
+
+#flex-end {
+    /*  Justify Content */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+#end {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    border: 2px solid black;
+}
+
+#j-center {
+    /*  Justify Content */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#center {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    border: 2px solid black;
+}
+
+#s-between {
+    /*  Justify Content */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#sbetween {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    border: 2px solid black;
+}
+
+#s-around {
+    /*  Justify Content */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#saround {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    border: 2px solid black;
+}
+
+#s-evenly {
+    /*  Justify Content */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#sevenly {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    border: 2px solid black;
+}

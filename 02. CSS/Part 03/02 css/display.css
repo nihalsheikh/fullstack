@@ -1,0 +1,11 @@
+#mainHead {
+    text-align: center;
+}
+
+h1 {
+    display: inline;
+}
+
+span {
+    display: block;
+}

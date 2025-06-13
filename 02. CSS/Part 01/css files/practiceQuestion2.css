@@ -1,0 +1,17 @@
+h3 {
+    background-color: maroon;
+    color: rgb(255, 255, 255)
+}
+
+p {
+    background-color: blue;
+    color: #ffffff;
+}
+
+#color1 {
+    background-color: rgb(220, 155, 0)
+}
+
+#color2 {
+    background-color: #53d0ff
+}

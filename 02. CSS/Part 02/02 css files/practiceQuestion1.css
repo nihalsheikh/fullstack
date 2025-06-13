@@ -1,0 +1,23 @@
+* {
+    font-family: Courier New;
+}
+
+h2 {
+    color: #1b74e4;
+}
+
+#searchButton {
+    color: #fff;
+    background-color: #000;
+}
+
+/* #login,
+#reg {
+    background-color: aqua;
+    color: #000;
+} */
+
+.btn {
+    background-color: aqua;
+    color: #000;
+}

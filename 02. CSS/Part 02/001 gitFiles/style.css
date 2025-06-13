@@ -1,0 +1,23 @@
+* {
+    font-family: sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    color: maroon;
+}
+
+p {
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+#myHead {
+    font-size: 48px;
+}
+
+.a {
+    background-color: wheat;
+}
+

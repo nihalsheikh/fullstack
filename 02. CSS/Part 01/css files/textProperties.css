@@ -1,0 +1,39 @@
+h1 {
+    text-align: center;
+    color: red;
+}
+
+h3 {
+    text-align: left;
+    color: turquoise;
+}
+
+p {
+    color: black;
+}
+
+#under {
+    text-decoration: underline;
+}
+
+#through {
+    text-decoration: yellow line-through;
+}
+
+#over {
+    text-decoration: red wavy overline;
+}
+
+#D1 {
+    background-color: violet;
+    text-align: right;
+}
+
+#D2 {
+    background-color: indigo;
+    font-weight: 800;
+}
+
+#D3 {
+    background-color: blue;
+}

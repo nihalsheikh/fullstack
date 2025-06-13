@@ -1,0 +1,54 @@
+h1 {
+    text-align: center;
+}
+
+#box:nth-of-type(2n+1) {
+    background-color: lightblue;
+}
+
+#box:nth-of-type(2n) {
+    background-color: lightgreen;
+}
+
+#box:nth-of-type(3n) {
+    background-color: palevioletred;
+}
+
+#box {
+    width: 100px;
+    height: 80px;
+    border: 2px solid black;
+    text-align: center;
+    font-weight: bold;
+}
+
+#f-nowrap {
+    width: 500px;
+    height: 250px;
+    background-color: lightcoral;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+#f-wrap {
+    width: 500px;
+    height: 250px;
+    background-color: lightcoral;
+
+    /*  flex-wrap */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#f-w-rev {
+    width: 500px;
+    height: 250px;
+    background-color: lightcoral;
+
+    /*  flex-wrap */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+}

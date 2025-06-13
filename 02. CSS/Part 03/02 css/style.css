@@ -1,0 +1,41 @@
+/* Used in git file: index.html*/
+
+div {
+    height: 200px;
+    width: 500px;
+    background-color: sandybrown;
+    text-align: justify;
+
+    /* Tradition way of wirting border properties */
+    /* border-width: 5px;
+    border-style: solid;
+    border-color: brown; */
+
+    /* Border shorthand */
+    border: 5px solid black;
+
+    /* Border radius */
+    border-radius: 25px;
+    border-bottom-right-radius: 50px;
+
+    /* Padding */
+    padding: 25px;
+
+    /* Margin */
+    margin-bottom: 20px;
+}
+
+h1 {
+    /* border-width: 2px;
+    border-style: dashed;
+    border-color: crimson; */
+
+    border: 2px dashed crimson;
+}
+
+button {
+    background-color: yellow;
+    border: 3px solid black;
+    border-radius: 8px;
+    padding: 10px 15px 20px 25px;
+}
