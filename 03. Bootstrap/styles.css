@@ -1,0 +1,11 @@
+h1 {
+    text-align: center;
+}
+
+div:nth-oftype(2n+1) {
+    background-color: blue;
+}
+
+div:nth-of-type(3n)::hover {
+    background-color: red;
+}
