@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do App</title>
+    <link rel="stylesheet" href="todo.css">
+</head>
+
+<body>
+    <h1>To Do</h1>
+    <hr>
+
+    <div id="addTask">
+        <input placeholder="Task Name" type="text" id="tName">
+        <input placeholder="Task Details" type="text" id="tDetails">
+        <button>Add Task</button>
+    </div>
+
+    <div id="taskList">
+        <h3>Task List:</h3>
+        <ul id="myTasks"></ul>
+    </div>
+
+    <div id="showTask">
+        <h3>Task Table:</h3>
+        <table>
+            <thead>
+                <th>Delete</th>
+                <th>Task Name</th>
+                <th>My tasks</th>
+            </thead>
+        </table>
+    </div>
+
+    <script src="todo.js"></script>
+</body>
+
+</html>

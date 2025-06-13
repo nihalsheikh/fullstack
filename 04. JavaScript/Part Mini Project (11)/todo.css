@@ -1,0 +1,26 @@
+#tableDiv {
+    display: flex;
+    flex-direction: row;
+    color: black;
+}
+
+.item {
+    margin-right: 20px;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 15px;
+}
+
+.delete {
+    padding: 15px;
+}
+
+.delete:hover {
+    background-color: red;
+    cursor: pointer;
+}
