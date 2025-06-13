@@ -1,0 +1,13 @@
+console.log("********************************");
+console.log("Trim Method");
+let msg = "    Hello     ";
+console.log(msg);
+console.log(msg.trim());
+console.log("********************************");
+console.log("toUpperCase and toLowerCase Method");
+let str = "Random STring";
+let lc = str.toLowerCase();
+let uc = str.toUpperCase();
+console.log(uc);
+console.log(lc);
+console.log("********************************");
