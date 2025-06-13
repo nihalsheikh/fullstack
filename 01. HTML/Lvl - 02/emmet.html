@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emmet</title>
+</head>
+
+<body>
+    <h1>Emmets in HTML</h1>
+
+    <h3>01. For child emmet shortcut</h3>
+    <p>use: &gt; symbol in between tags</p>
+    <p>Example: nav&gt;ul&gt;li</p>
+    <p>output is as the following tags, see code</p>
+
+    <nav>
+        <ul>
+            <li></li>
+        </ul>
+    </nav>
+
+    <h3>02. For Multiple tags emmet shortcut</h3>
+    <p>use * symbol to get multiple tags</p>
+    <p>Example: ul&gt;li*3</p>
+    <p>output is as following, see code</p>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+    <h3>03. Item Numbering emmet shortcut</h3>
+    <p>use dot symbol '.' for class attribute, followd by the nameScheme you want</p>
+    <p>with nameScheme write '$' dollar symbol in continuation</p>
+    <p>after '$' dollar symbol you can specify how many tags you want using '*' asterisk symbol</p>
+    <p>Example: ul&gt;li.item$*3</p>
+    <p>Output is as follow, see code</p>
+    <ul>
+        <! -- name here is the nameSceme-->
+            <li class="name1"></li>
+            <li class="name2"></li>
+            <li class="name3"></li>
+    </ul>
+
+    <h3>04. ID emmet shortcut</h3>
+    <p>To use ID as attribute in a tag, use the '#' symbol with tag followed by nameScheme</p>
+    <p>Example: ul#header</p>
+    <p>Output is as follows, see code</p>
+    <ul id="header"></ul>
+
+    <h3>05. Class emmet shortcut</h3>
+    <p>To use class as an attribute in a tag, use the '.' dot symbol followed by tag</p>
+    <p>Example: ul.header</p>
+    <p>Output is as follows, see code</p>
+    <ul class="header"></ul>
+</body>
+
+</html>

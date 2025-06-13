@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Question 04</title>
+</head>
+
+<body>
+    <h1>Practice Question 04</h1> <br>
+
+    <h3>Q1 Table creation</h3>
+    <table border="black">
+        <caption>Student Information</caption>
+
+        <tr>
+            <th rowspan="6">Info</th>
+            <th rowspan="2">Name</th>
+            <th colspan="2">Address</th>
+        </tr>
+        <tr>
+            <th>City</th>
+            <th>House</th>
+        </tr>
+
+        <tr>
+            <td>A</td>
+            <td>Delhi</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>B</td>
+            <td>Mumbai</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>C</td>
+            <td>Kolkata</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>D</td>
+            <td>Pune</td>
+            <td>4</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h3>Q2 Registration Form</h3>
+    <form action="/server">
+        <div>
+            <label for="fullName">Name:</label>
+            <input type="text" id="fullName" name="fullName">
+        </div> <br>
+
+        <div>
+            <label for="gender">Sex:</label>
+            <input type="radio" id="gender" name="gender" value="male">
+            <label for="gender">Male</label>
+            <input type="radio" id="gender" name="gender" value="female">
+            <label for="gender">Female</label>
+        </div> <br>
+
+        <div>
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+                <option value="select">Select an option</option>
+                <option value="india">IND</option>
+                <option value="usa">USA</option>
+                <option value="uae">UAE</option>
+                <option value="uk">UK</option>
+                <option value="russia">RUS</option>
+                <option value="nepal">NEP</option>
+                <option value="canada">CAN</option>
+            </select>
+        </div> <br>
+
+        <div>
+            <label for="msg">Message:</label> <br>
+            <textarea id="msg" name="msg" rows="5" cols="25"></textarea>
+        </div> <br>
+
+        <div>
+            <input type="checkbox" name="subscribe" id="subscribe">
+            <label for="subscribe">Subscribe?</label>
+        </div> <br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <hr>
+
+    <h3>Q3 Feedback Form</h3>
+    <form action="/server">
+        <div>
+            <label for="fullName">Name:</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Enter your name">
+        </div> <br>
+
+        <div>
+            <label for="mail">Email:</label>
+            <input type="email" id="mail" name="mail" placeholder="Enter your email">
+        </div> <br>
+
+        <div>
+            <label for="msg">Message:</label> <br>
+            <textarea id="msg" name="msg" rows="5" col="25"></textarea>
+        </div> <br>
+
+        <div>
+            <label for="ratings">Rate us out of 5:</label> <br>
+
+            <input type="radio" name="ratings" id="one" value="1">
+            <label for="one">1</label> <br>
+
+            <input type="radio" name="ratings" id="two" value="2">
+            <label for="two">2</label> <br>
+
+            <input type="radio" name="ratings" id="three" value="3">
+            <label for="three">3</label> <br>
+
+            <input type="radio" name="ratings" id="four" value="4">
+            <label for="four">4</label> <br>
+
+            <input type="radio" name="ratings" id="five" value="5">
+            <label for="five">5</label>
+        </div> <br>
+
+        <button type="submit">Send your message!</button>
+    </form>
+
+</body>
+
+</html>
