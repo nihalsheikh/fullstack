@@ -1,0 +1,25 @@
+{
+  "name": "07.-express",
+  "version": "1.0.0",
+  "description": "express practice",
+  "keywords": [
+    "express",
+    "javascript",
+    "node",
+    "npm"
+  ],
+  "license": "ISC",
+  "author": "Nihal Sheikh",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10"
+  },
+  "routes": [
+    "https://git.new/pathToRegexpError"
+  ]
+}
