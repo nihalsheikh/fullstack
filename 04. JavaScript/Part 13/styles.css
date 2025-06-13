@@ -1,0 +1,66 @@
+h1 {
+    text-align: center;
+}
+
+button {
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+    background-color: green;
+    color: beige;
+    cursor: pointer;
+    margin: 20px auto;
+    font-size: larger;
+    font-weight: 700;
+    font-family: monospace;
+}
+
+button:hover {
+    background-color: rgb(58, 219, 58);
+    color: white;
+
+}
+
+#factImgContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+#factAndImg {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#imgBox {
+    width: 600px;
+    height: 500px;
+    background-color: rgb(130, 63, 63);
+    border: solid 2px black;
+    border-radius: 4px;
+    margin: 15px 15px;
+}
+
+img {
+    width: 600px;
+    height: 500px;
+}
+
+#factBox {
+    background-color: bisque;
+    width: 600px;
+    height: 500px;
+    color: black;
+    border-radius: 4px;
+    border: solid 2px black;
+    margin: 15px 15px;
+}
+
+p {
+    color: rgb(22, 20, 20);
+    font-size: xx-large;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px auto;
+    justify-content: space-between;
+}
