@@ -26,3 +26,25 @@ console.log(arr.__proto__);
 // syntax: datatype.prototype
 Array.prototype
 String.prototype
+
+// Factory Function
+
+function makeIdentity(name, age, n, c) {
+    // let country = [IND, USA, CAN, JAP, UK, AUS, UAE, QAT, SAU]
+    // const skin = [white, yellow, brown, black]
+
+    const person = {
+        name: name,
+        age: age,
+        // nationality: this.country[n],
+        // skinColor: this.skin[c],
+        talk() {
+            console.log(`Hi, my name is ${this.name}`)
+        }
+    }
+
+    return person
+}
+
+let p1 = makeIdentity("John", 25);
+let p2 = makeIdentity("Joe", 30)
