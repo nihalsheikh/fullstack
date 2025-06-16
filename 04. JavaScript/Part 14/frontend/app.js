@@ -17,3 +17,12 @@ console.log(arr);
 // This func is unique to arr, if we create another arr2,
 // it will not have this func as it is not the part of prototype
 arr.sayHello = () => console.log("This is arr");
+
+// Accessing Prototypes
+// through the following line of code we can access the copy of the Prototype object: _ _ proto _ _
+console.log(arr.__proto__);
+
+// Access actual prototype object
+// syntax: datatype.prototype
+Array.prototype
+String.prototype
