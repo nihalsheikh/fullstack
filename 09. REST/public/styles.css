@@ -1,24 +1,66 @@
 h1 {
+    text-align: center;
     color: maroon;
+    background-color: wheat;
 }
 
-#mainContainer {
+#flex-container {
+    display: flex;
     flex-direction: row;
+    justify-items: center;
+    justify-content: space-evenly;
+}
+
+button {
+    background-color: aqua;
+    padding: 8px 8px;
+    border: 2px solid black;
+    border-radius: 2rem;
+}
+
+button:hover {
+    cursor: pointer;
 }
 
 #middle {
     background-color: beige;
+    width: 600px;
 }
 
 .post {
-    background-color: bisque;
+    background-color: maroon;
 }
 
 .username {
     font-style: italic;
+    padding: 5px 10px;
+    color: wheat;
+}
+
+.content {
+    color: white;
+    padding: 10px 10px;
+}
+
+form {
+    margin: 30px 180px;
+    border: 2px solid brown;
+    padding: 20px;
+    background-color: burlywood;
+}
+
+input {
+    height: 30px;
+}
+
+textarea {
+    height: 150px;
 }
 
 #right,
 #left {
     background-color: grey;
+    justify-items: center;
+    width: 450px;
+    height: 645px;
 }
