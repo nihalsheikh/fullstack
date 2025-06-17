@@ -64,4 +64,17 @@ Person.prototype.talk = () => {
 }
 
 // using 'new' keyword to use the Constructor Func
-let newPerson = new Person("Tony", 25)
+let p3 = new Person("Tony", 25)
+
+// Class & Constructor
+class newPerson {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+    talk() {
+        console.log(`Hi, my name is ${this.name}`)
+    }
+}
+
+let p4 = new newPerson()
