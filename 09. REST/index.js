@@ -18,8 +18,8 @@ app.set("view engine", "ejs");
 // set path for views folder
 app.set("views", path.join(__dirname, "views"));
 
-// set path for public folder
-app.set(express.static(path.join(__dirname, "public")));
+// set path for public folder: CSS File
+app.use(express.static(path.join(__dirname, "public")));
 
 // make sure port is running and active
 app.listen(port, (req, res) => {
@@ -43,7 +43,7 @@ let posts = [
     },
     {
         username: "recruiter",
-        content: "we gonna farm view and reach and not give jobs"
+        content: "we gonna farm reaches and view and not give jobs"
     },
 ];
 
@@ -51,10 +51,10 @@ let posts = [
 // resource: things/objects on which we perform out CRUD operations
 // make sure the name of the route you set is a 'noun' and not a 'verb' ex: posts and not viewPost or seepost
 app.get("/posts", (req, res) => {
-    res.send("Posts are uploading... Please hold on a little longer")
+    res.render("index.ejs", { posts })
 })
 
 // very basic GET Request
 app.get("/", (req, res) => {
-    res.send("Root Page, server is running...")
+    res.render("home.ejs")
 });
