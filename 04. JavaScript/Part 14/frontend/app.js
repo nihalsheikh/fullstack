@@ -48,3 +48,20 @@ function makeIdentity(name, age, n, c) {
 
 let p1 = makeIdentity("John", 25);
 let p2 = makeIdentity("Joe", 30)
+
+// New Operator: new keyword
+// Constructor Func: special func in JS, does not return anything
+function Person(name, age) {
+    this.name = name; // directly accessing the object
+    this.age = age; // directly accessing the object
+    console.log(this) // when the instnace is not created, `this` here will refer to Window itself
+    // when the instance is created, `this` here will refer to the Constructor function's new instance
+}
+
+// now we can make functions inside Constructor Func without memory issues
+Person.prototype.talk = () => {
+    console.log(`Hi, my name is ${this.name}`)
+}
+
+// using 'new' keyword to use the Constructor Func
+let newPerson = new Person("Tony", 25)
