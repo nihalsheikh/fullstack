@@ -1,0 +1,24 @@
+h1 {
+    color: maroon;
+}
+
+#mainContainer {
+    flex-direction: row;
+}
+
+#middle {
+    background-color: beige;
+}
+
+.post {
+    background-color: bisque;
+}
+
+.username {
+    font-style: italic;
+}
+
+#right,
+#left {
+    background-color: grey;
+}
