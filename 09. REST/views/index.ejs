@@ -12,8 +12,12 @@
     <h1>Quora Posts</h1>
     <hr>
 
-    <div id="mainContainer">
-        <div id="right"></div>
+    <div id="flex-container">
+        <div id="right">
+            <h3>Home</h3>
+            <h3>New Post</h3>
+            <h3>Profile</h3>
+        </div>
         <div id="middle">
             <% for(post of posts) { %>
                 <div class="post">
@@ -27,7 +31,10 @@
                 </div>
                 <% } %>
         </div>
-        <div id="left"></div>
+        <div id="left">
+            <h3>Account Details</h3>
+            <h3>Settings</h3>
+        </div>
     </div>
 
 </body>
