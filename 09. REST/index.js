@@ -58,3 +58,14 @@ app.get("/posts", (req, res) => {
 app.get("/", (req, res) => {
     res.render("home.ejs")
 });
+
+// New Post Creation
+app.get("/posts/new", (req, res) => { // first create a form to write a post
+    res.render("newform.ejs")
+})
+
+app.post("/posts", (req, res) => { // after submit is clicked, post your content
+    let {username, content} = req.body;
+    posts.push({username, content});
+    res.send("Post request working...")
+})
