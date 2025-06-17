@@ -30,18 +30,22 @@ app.listen(port, (req, res) => {
 // we want our DB to be able to handle changes, so we use 'let' and not 'const'
 let posts = [
     {
+        id: "1a",
         username: "johnwick",
         content: "am I still ex-communicado"
     },
     {
+        id: "2b",
         username: "joemama",
         content: "the joke never expires"
     },
     {
+        id: "3c",
         username: "some.developer",
         content: "man, when will i get a job???"
     },
     {
+        id: "4d",
         username: "recruiter",
         content: "we gonna farm reaches and view and not give jobs"
     },
@@ -67,5 +71,19 @@ app.get("/posts/new", (req, res) => { // first create a form to write a post
 app.post("/posts", (req, res) => { // after submit is clicked, post your content
     let {username, content} = req.body;
     posts.push({username, content});
-    res.send("Post request working...")
+
+    // To connect different pages we use 'redirect()'
+    res.redirect("/posts")
+})
+
+// dummy settings page
+app.get("/settings", (req, res) => {
+    res.render("settings.ejs", { posts })
+})
+
+// Joining unique ID's with the posts
+app.get("/posts/:id", (req, res) => {
+    let {id} = req.params;
+    let post = posts.find((p) => id === p.id);
+    res.render("show.ejs", {post})
 })
