@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Post</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <h1>Create New Post</h1>
+    <hr>
+
+    <div id="flex-container">
+        <div id="right">
+            <h3>Home</h3>
+            <h3>New Post</h3>
+            <h3>Profile</h3>
+        </div>
+        <div id="middle">
+            <form action="/posts" method="post">
+                <label for="user">Username:
+                    <input type="text" placeholder="Enter username" name="username">
+                </label> <br>
+                <br>
+                <br>
+                <label for="content">Content:
+                    <textarea type="text" placeholder="write your content" name="content"></textarea>
+                </label> <br>
+                <br>
+                <br>
+                <button>Submit Post</button>
+            </form>
+        </div>
+        <div id="left">
+            <h3>Account Details</h3>
+            <h3>Settings</h3>
+        </div>
+    </div>
+</body>
+
+</html>
