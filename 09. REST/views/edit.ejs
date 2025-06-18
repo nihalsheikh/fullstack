@@ -27,14 +27,13 @@
                 <label for="">Content:</label>
                 <textarea name="content" id=""><%= post.content%></textarea> <br>
                 <br>
-                <div id="flex-container">
-                    <button id="redBtn">Submit Post</button>
-
-                    <form method="post" action="/posts/<%=post.id%>?_method=DELETE">
-                        <button id="redBtn">🗑️ Delete Post</button>
-                    </form>
-                </div>
+                <button id="redBtn">Submit Post</button>
             </form>
+            <div id="flex-container">
+                <form method="post" action="/posts/<%=post.id%>?_method=DELETE">
+                    <button id="redBtn">🗑️ Delete Post</button>
+                </form>
+            </div>
         </div>
         <div id="left">
             <h3><a href="/settings" id="sideBtn">Account Details</a></h3>
