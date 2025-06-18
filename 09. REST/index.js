@@ -12,6 +12,10 @@ const path = require("path");
 // UUID for every post
 const {v4: uuidv4} = require("uuid");
 
+// Overwriting the POST request to PATCH to edit HTML form
+let methodOverride = require("method-override")
+app.use(methodOverride("_method"))
+
 // define middleware
 app.use(express.urlencoded({ extended: true }));
 
@@ -102,12 +106,12 @@ app.patch("/posts/:id", (req, res) => {
     let post = posts.find((p) => id === p.id);
     post.content = newContent;
     console.log(post)
-    res.send("patch request working...")
+    res.redirect("/posts")
 })
 
 // setting new route to edit the posts
 app.get("/posts/:id/edit", (req, res) => {
-    // let {post} = req.body.posts;
     let { id } = req.params;
-    res.render("edit.ejs", {posts})
+    let post = posts.find((p) => id === p.id);
+    res.render("edit.ejs", {post})
 })

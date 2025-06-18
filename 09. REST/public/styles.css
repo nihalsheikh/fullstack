@@ -58,7 +58,8 @@ button:hover {
 }
 
 #viewBtn,
-#editBtn {
+#editBtn,
+#delBtn {
     margin: 5px;
     padding: 5px 8px;
     border: 2px solid brown;
