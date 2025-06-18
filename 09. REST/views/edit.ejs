@@ -25,13 +25,13 @@
                 </h3>
                 <br>
                 <label for="">Content:</label>
-                <textarea name="content" id=""><%= post.content%></textarea>
+                <textarea name="content" id=""><%= post.content%></textarea> <br>
                 <br>
                 <div id="flex-container">
-                    <button>Submit Post</button>
+                    <button id="redBtn">Submit Post</button>
 
                     <form method="post" action="/posts/<%=post.id%>?_method=DELETE">
-                        <button id="delBtn">🗑️ Delete Post</button>
+                        <button id="redBtn">🗑️ Delete Post</button>
                     </form>
                 </div>
             </form>
