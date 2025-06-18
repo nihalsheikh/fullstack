@@ -24,6 +24,14 @@
                         @ <%= post.username %>
                     </h2>
                     <br>
+                    <div id="postBtn">
+                        <div>
+                            <a href="http://localhost:8080/posts/<%=post.id%>" id="viewBtn">👁️‍🗨️ View Post</a>
+                        </div>
+                        <div>
+                            <a href="http://localhost:8080/posts/<%=post.id%>" id="editBtn">🖋️ Edit Post</a>
+                        </div>
+                    </div>
                     <br>
                 </div>
                 <% } %>
