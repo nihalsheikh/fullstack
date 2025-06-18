@@ -93,9 +93,21 @@ app.get("/posts/:id", (req, res) => {
 })
 
 // Edit a post
-app.put("/posts/:id", (req, res) => {
+app.patch("/posts/:id", (req, res) => {
+    // ID's reset on server restart. Keep that in mind
     let { id } = req.params; // to get the id of post
     let newContent = req.body.content;
-    console.log(newContent);
+
+    // get the post and update the content
+    let post = posts.find((p) => id === p.id);
+    post.content = newContent;
+    console.log(post)
     res.send("patch request working...")
+})
+
+// setting new route to edit the posts
+app.get("/posts/:id/edit", (req, res) => {
+    // let {post} = req.body.posts;
+    let { id } = req.params;
+    res.render("edit.ejs", {posts})
 })

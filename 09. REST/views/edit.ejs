@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Post</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <h1>Quora: Edit Post</h1>
+    <hr>
+    <div id="flex-container">
+        <div id="right">
+            <h3><a href="http://localhost:8080/" id="sideBtn">Home</a></h3>
+            <h3><a href="http://localhost:8080/posts/new" id="sideBtn">New Post</a></h3>
+            <h3><a href="http://localhost:8080/posts" id="sideBtn">View All Posts</a></h3>
+        </div>
+        <div id="middle">
+            <form action="">
+                <h4>Post ID: <%= post.id %>
+                </h4>
+                <h3>Username: @<%= post.username %>
+                </h3>
+                <br>
+                <label for="">Content:</label>
+                <textarea name="" id=""><%= post.content%></textarea>
+
+                <br>
+                <button>Submit Post</button>
+            </form>
+        </div>
+        <div id="left">
+            <h3><a href="/settings" id="sideBtn">Account Details</a></h3>
+            <h3><a href="/settings" id="sideBtn">Settings</a></h3>
+        </div>
+    </div>
+</body>
+
+</html>
