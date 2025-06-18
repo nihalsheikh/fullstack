@@ -9,6 +9,9 @@ const port = 8080;
 // define path for EJS
 const path = require("path");
 
+// UUID for every post
+const {v4: uuidv4} = require("uuid");
+
 // define middleware
 app.use(express.urlencoded({ extended: true }));
 
@@ -30,22 +33,22 @@ app.listen(port, (req, res) => {
 // we want our DB to be able to handle changes, so we use 'let' and not 'const'
 let posts = [
     {
-        id: "1a",
+        id: uuidv4(), // makes unique string id's,
         username: "johnwick",
         content: "am I still ex-communicado"
     },
     {
-        id: "2b",
+        id: uuidv4(),
         username: "joemama",
         content: "the joke never expires"
     },
     {
-        id: "3c",
+        id: uuidv4(),
         username: "some.developer",
         content: "man, when will i get a job???"
     },
     {
-        id: "4d",
+        id: uuidv4(),
         username: "recruiter",
         content: "we gonna farm reaches and view and not give jobs"
     },
@@ -70,7 +73,8 @@ app.get("/posts/new", (req, res) => { // first create a form to write a post
 
 app.post("/posts", (req, res) => { // after submit is clicked, post your content
     let {username, content} = req.body;
-    posts.push({username, content});
+    let id = uuidv4(); // make new id's for new posts
+    posts.push({ id, username, content });
 
     // To connect different pages we use 'redirect()'
     res.redirect("/posts")
@@ -86,4 +90,11 @@ app.get("/posts/:id", (req, res) => {
     let {id} = req.params;
     let post = posts.find((p) => id === p.id);
     res.render("show.ejs", {post})
+})
+
+// Edit a post
+app.patch("/posts/:id", (req, res) => {
+    let {id} = req.params;
+    console.log(id);
+    res.send("patch request working...")
 })
