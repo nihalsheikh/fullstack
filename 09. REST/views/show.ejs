@@ -28,8 +28,15 @@
                 <h4 class="content">
                     <%= post.content %>
                 </h4>
-                <a href="http://localhost:8080/posts/<%=post.id%>/edit" id="editBtn">🖋️ Edit Post</a>
-                <a href="http://localhost:8080/posts/<%=post.id%>" id="delBtn">🗑️ Delete Post</a>
+                <div id="flex-container">
+                    <a href="http://localhost:8080/posts/<%=post.id%>/edit" id="editBtn">🖋️ Edit Post</a>
+
+                    <form method="post" action="/posts/<%=post.id%>?_method=DELETE">
+                        <button id="delBtn">🗑️ Delete Post</button>
+                    </form>
+                </div>
+
+
                 <br>
                 <br>
             </div>

@@ -30,7 +30,13 @@
                 </label> <br>
                 <br>
                 <br>
-                <button>Submit Post</button>
+                <button>Submit Post</button> <br>
+                <div>
+                    <br>
+                    <form method="post" action="/posts/<%= post.id %>?_method=DELETE">
+                        <button>🗑️ Delete Post</button>
+                    </form>
+                </div>
             </form>
         </div>
         <div id="left">

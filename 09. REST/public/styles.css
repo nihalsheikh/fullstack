@@ -22,9 +22,9 @@ h2 {
 
 button {
     background-color: rgb(161, 50, 50);
-    padding: 8px 8px;
+    padding: 5px 5px;
     border: 2px solid brown;
-    border-radius: 2rem;
+    border-radius: 15px;
     color: white;
 }
 
@@ -71,7 +71,7 @@ button:hover {
     font: bold;
 }
 
-form {
+#form {
     margin: 30px 180px;
     border: 2px solid brown;
     padding: 20px;

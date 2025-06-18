@@ -18,7 +18,7 @@
             <h3><a href="http://localhost:8080/posts" id="sideBtn">View All Posts</a></h3>
         </div>
         <div id="middle">
-            <form method="post" action="/posts/<%= post.id %>?_method=PATCH">
+            <form method="post" action="/posts/<%= post.id %>?_method=PATCH" id="form">
                 <h4>Post ID: <%= post.id %>
                 </h4>
                 <h3>Username: @<%= post.username %>
@@ -28,15 +28,12 @@
                 <textarea name="content" id=""><%= post.content%></textarea>
                 <br>
                 <div id="flex-container">
-                    <button>
-                        Submit
-                    </button>
-                    <br>
-                    <button>
-                        <a href="http://localhost:8080/posts/<%=post.id%>" id="sideBtn">🗑️ Delete</a>
-                    </button>
-                </div>
+                    <button>Submit Post</button>
 
+                    <form method="post" action="/posts/<%=post.id%>?_method=DELETE">
+                        <button id="delBtn">🗑️ Delete Post</button>
+                    </form>
+                </div>
             </form>
         </div>
         <div id="left">
