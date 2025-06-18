@@ -14,9 +14,9 @@
 
     <div id="flex-container">
         <div id="right">
-            <h3><a href="http://localhost:8080/">Home</a></h3>
-            <h3><a href="http://localhost:8080/posts/new">New Post</a></h3>
-            <h3><a href="http://localhost:8080/posts">View All Posts</a></h3>
+            <h3><a href="http://localhost:8080/" id="sideBtn">Home</a></h3>
+            <h3><a href="http://localhost:8080/posts/new" id="sideBtn">New Post</a></h3>
+            <h3><a href="http://localhost:8080/posts" id="sideBtn">View All Posts</a></h3>
         </div>
         <div id="middle">
             <% for(post of posts) { %>
@@ -29,13 +29,17 @@
                         <%= post.content %>
                     </h4>
                     <br>
-                    <p><a href="http://localhost:8080/posts/<%=post.id%>" class="viewPost">👁️‍🗨️ View Post</a></p>
+                    <div>
+                        <a href="http://localhost:8080/posts/<%=post.id%>" id="viewBtn">👁️‍🗨️ View
+                            Post</a>
+                    </div>
+                    <br>
                 </div>
                 <% } %>
         </div>
         <div id="left">
-            <h3><a href="/settings">Account Details</></a></h3>
-            <h3><a href="/settings">Settings</a></h3>
+            <h3><a href="/settings" id="sideBtn">Account Details</></a></h3>
+            <h3><a href="/settings" id="sideBtn">Settings</a></h3>
         </div>
     </div>
 
