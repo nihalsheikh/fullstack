@@ -8,10 +8,9 @@ h2 {
     text-align: center;
 }
 
-a {
+#sideBtn {
     text-decoration: none;
     color: white;
-    padding-bottom: 20px;
 }
 
 #flex-container {
@@ -22,10 +21,11 @@ a {
 }
 
 button {
-    background-color: aqua;
+    background-color: rgb(161, 50, 50);
     padding: 8px 8px;
-    border: 2px solid black;
+    border: 2px solid brown;
     border-radius: 2rem;
+    color: white;
 }
 
 button:hover {
@@ -50,6 +50,18 @@ button:hover {
 .content {
     color: white;
     padding: 5px 10px;
+}
+
+#viewBtn {
+    margin: 5px;
+    padding: 5px 8px;
+    border: 2px solid brown;
+    border-radius: 15px;
+    background-color: burlywood;
+    text-decoration: none;
+    color: black;
+    font-size: x-small;
+    font: bold;
 }
 
 form {
