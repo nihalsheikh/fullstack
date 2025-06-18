@@ -93,8 +93,9 @@ app.get("/posts/:id", (req, res) => {
 })
 
 // Edit a post
-app.patch("/posts/:id", (req, res) => {
-    let {id} = req.params;
-    console.log(id);
+app.put("/posts/:id", (req, res) => {
+    let { id } = req.params; // to get the id of post
+    let newContent = req.body.content;
+    console.log(newContent);
     res.send("patch request working...")
 })
