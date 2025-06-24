@@ -25,5 +25,9 @@ sudo mariadb-upgrade
 # Verify the installation
 sudo mariadb -u root
 
-# Exit the monitor with: type: EXIT;
+# Run MariaDB in terminal
+mariadb
+
+# Exit the terminal type:
+EXIT
 ```
