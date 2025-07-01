@@ -6,7 +6,6 @@ SQl is the language, MySQL is the Database
 
 In Arch linux, there is no direct cmd to install MySQL,
 instead we use MariaDB
-
 ```
 # Install MariaDB
 sudo pacman -S mariadb mariadb-clients
