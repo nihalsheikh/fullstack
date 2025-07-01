@@ -16,7 +16,7 @@ CREATE TABLE student(
 INSERT INTO student
 
 -- also pass the values using VALUES keyword to add into table
-VALUES
+VALUESqwdsss
 (101, "Jake", 20)
 (102, "Joe", 22)
 (103, "John", 19)
