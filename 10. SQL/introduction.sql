@@ -32,9 +32,6 @@ CREATE DATABASE IF NOT EXISTS college;
 -- to see all the databases, code SHOW <db_name>
 SHOW DATABASES;
 
--- to edit or make changes in a db code: USE <db_name>
-USE college;
-
 -- to check tables in a db, use show tables:
 SHOW TABLES;
 
