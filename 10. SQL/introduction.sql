@@ -2,7 +2,7 @@
 -- CREATE keyword
 CREATE DATABASE college;
 
--- USE keyword: to use a DB use this
+-- to use a DB, code: USE <db_name>
 USE college;
 
 -- make table inside a DB with CREATE TABLE, also provide schema of table alongside
@@ -13,21 +13,33 @@ CREATE TABLE student(
 );
 
 -- to insert data into table we use INSERT INTO
-INSERT INTO student
+INSERT INTO student;
 
 -- also pass the values using VALUES keyword to add into table
 VALUES
 (101, "Jake", 20)
 (102, "Joe", 22)
-(103, "John", 19)
+(103, "John", 19);
 
 -- SELECT keyword: to check the data inside table
-SELECT * FROM student
+SELECT * FROM student;
 
 -- conditions in sql
 -- use condition when creating db or tb, as follows:
 -- IF NOT EXISTS: this will check if a  db exits
-CREATE DATABASE IF NOT EXISTS college
+CREATE DATABASE IF NOT EXISTS college;
+
+-- to see all the databases, code SHOW <db_name>
+SHOW DATABASES;
+
+-- to edit or make changes in a db code: USE <db_name>
+USE college;
+
+-- to check tables in a db, use show tables:
+SHOW TABLES;
 
 -- Delete a DB
-DROP DATABASE college
+DROP DATABASE college;
+
+-- DELETE a db with conditions
+DROP DATABASE IF EXISTS college;
