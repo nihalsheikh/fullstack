@@ -16,13 +16,18 @@ CREATE TABLE student(
 INSERT INTO student
 
 -- also pass the values using VALUES keyword to add into table
-VALUESqwdsss
+VALUES
 (101, "Jake", 20)
 (102, "Joe", 22)
 (103, "John", 19)
 
 -- SELECT keyword: to check the data inside table
 SELECT * FROM student
+
+-- conditions in sql
+-- use condition when creating db or tb, as follows:
+-- IF NOT EXISTS: this will check if a  db exits
+CREATE DATABASE IF NOT EXISTS college
 
 -- Delete a DB
 DROP DATABASE college
