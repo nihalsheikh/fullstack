@@ -1,11 +1,15 @@
 # SQL
 
-SQl is the language, MySQL is the Database
+SQL is the language, MySQL is the Database
 
 ## Installation Guide in linux
 
+<details>
+<sumamry>Cmds to install MariaDB</summary>
+
 In Arch linux, there is no direct cmd to install MySQL,
 instead we use MariaDB
+
 ```
 # Install MariaDB
 sudo pacman -S mariadb mariadb-clients
@@ -32,3 +36,7 @@ mariadb
 # Exit the terminal type:
 EXIT
 ```
+
+</details>
+
+## Syllabus
