@@ -14,8 +14,8 @@ sudo pacman -S mariadb mariadb-clients
 sudo mariadb-install-db --user=mysql --basedir=/usr --datadir=/var/lib/mysql
 
 # Start and enable the MariaDB service
-sudo systemctl start mariadb
 sudo systemctl enable mariadb
+sudo systemctl start mariadb
 
 # Secure the installation
 sudo mysql_secure_installation
