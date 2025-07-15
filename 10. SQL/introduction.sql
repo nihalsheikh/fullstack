@@ -40,3 +40,18 @@ DROP DATABASE college;
 
 -- DELETE a db with conditions
 DROP DATABASE IF EXISTS college;
+
+-- Datatypes in SQL
+-- 01. CHAR
+-- 02. VARCHAR
+-- 03. BLOB
+-- 04. INT
+-- 05. TINYINT
+-- 06. BIGINT
+-- 07. BIT
+-- 08. FLOAT
+-- 09. DOUBLE
+-- 10. BOOLEAN
+-- 11. DATE
+-- 12. YEAR
+-- 13. UNSIGNED
