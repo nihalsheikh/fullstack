@@ -65,3 +65,8 @@ DROP DATABASE IF EXISTS college;
 -- KEYS CONSTRAINTS IN SQL
 -- PRIMARY KEY
 -- FOREIGN KEY
+
+-- Different ways to checkout the data in tables
+-- 01: SELECT <col1>, <col2> FROM <tb_name>
+-- 02. SELECT * FROM <tb_name>
+-- 03. SELECT DISTINCT <col1> FROM <tb_name>
