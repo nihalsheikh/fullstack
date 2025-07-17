@@ -70,3 +70,12 @@ DROP DATABASE IF EXISTS college;
 -- 01: SELECT <col1>, <col2> FROM <tb_name>
 -- 02. SELECT * FROM <tb_name>
 -- 03. SELECT DISTINCT <col1> FROM <tb_name>
+
+-- Clauses: conditions applied to retrieve some data
+-- WHERE Clause is used to apply conditions
+
+-- Operators in SQL
+-- ARITHMETIC: (+) (-) (*) (/) (%)
+-- COMPARISON: (=) (!=) (>) (>=) (<) (<=)
+-- LOGIC: (AND) (OR) (NOT) (IN) (BETWEEN) (ALL) (LIKE) (ANY)
+-- BITWISE: Bitwise AND (&) and Bitwise OR (|)
