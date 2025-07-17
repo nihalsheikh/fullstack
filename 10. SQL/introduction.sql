@@ -79,3 +79,7 @@ DROP DATABASE IF EXISTS college;
 -- COMPARISON: (=) (!=) (>) (>=) (<) (<=)
 -- LOGIC: (AND) (OR) (NOT) (IN) (BETWEEN) (ALL) (LIKE) (ANY)
 -- BITWISE: Bitwise AND (&) and Bitwise OR (|)
+
+-- LIMIT Clause: set an upper limit to the no. of rows to be returned
+
+-- ORDER BY Clause: used to sort a column in either Ascending (ASC) or Descending (DESC)
