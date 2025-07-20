@@ -37,3 +37,6 @@ try {
 } catch (err) {
     console.log(err);
 }
+
+// ending connection with DB after we get our result
+connection.end()
