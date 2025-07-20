@@ -83,3 +83,32 @@ DROP DATABASE IF EXISTS college;
 -- LIMIT Clause: set an upper limit to the no. of rows to be returned
 
 -- ORDER BY Clause: used to sort a column in either Ascending (ASC) or Descending (DESC)
+
+-- Aggregate Function
+    -- COUNT()
+    -- MAX()
+    -- MIN()
+    -- SUM()
+    -- AVG()
+
+-- GROUP BY clause
+-- HAVING clause
+
+-- GENERAL ORDER of using clause
+    -- SELECT
+    -- FROM
+    -- WHERE
+    -- GROUP BY
+    -- HAVING
+    -- ORDER BY
+
+-- TABLE QUERIES revisiting
+    -- UPDATE
+    -- DELETE
+    -- ALTER TABLE
+        -- ADD COLUMN
+        -- DROP COLUMN
+        -- RENAME TO
+        -- CHANGE COLUMN
+        -- MODIFY
+    -- TRUNCATE
