@@ -30,12 +30,12 @@ const connection = mysql.createConnection({
 // use connection methods to check or making chnages to DB
 // Exception Handling: write  in try catch block, we never know what may go wrong
 // we can write query else where and then pass it to our query connection method
-let query = "INSERT INTO user (id, username, email, password) VALUES (?, ?, ?, ?)";
+let query = "INSERT INTO user (id, username, email, password) VALUES ?";
 let user1 = ["123","123_new_user", "xyz@yahoo.com", "abc"];
-// let users = [
-//     ["123b","123_new_userb", "bxyz@yahoo.com", "abcb"],
-//     ["123c","123_new_userc", "cxyz@yahoo.com", "abcc"]
-// ]
+let users = [
+    ["123b","123_new_userb", "bxyz@yahoo.com", "abcb"],
+    ["123c","123_new_userc", "cxyz@yahoo.com", "abcc"]
+]
 try {
     connection.query(query, [users], (err, result) => {
         if (err) throw err;
