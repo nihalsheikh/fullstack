@@ -7,6 +7,18 @@ const mysql = require("mysql2");
 const express = require("express");
 const app = express();
 
+// set page and the path
+const path = require("path");
+
+// method-override
+const methodOverride = require("method-override");
+
+app.set("view engine", "ejs");
+app.set("views", path.join(__dirname, "/views"));
+
+app.use(methodOverride("_method"));
+app.use(express.urlencoded({extended: true})); // to parse form data
+
 // Create the connection to database
 const connection = mysql.createConnection({
 	host: "localhost",
@@ -39,21 +51,6 @@ let getRandomUser = () => {
 //     data.push(getRandomUser());
 // }
 
-// try {
-//     connection.query(query, [data], (err, result) => {
-//         if (err) throw err;
-//         console.log(result);
-//         console.log(result.length);
-//         console.log(result[0]);
-//         console.log(result[1]);
-//     })
-// } catch (err) {
-//     console.log(err);
-// }
-
-// ending connection with DB after we get our result
-// connection.end()
-
 // Home Page route
 app.get("/", (req, res) => {
 	let query = "SELECT count(*) FROM user";
@@ -61,14 +58,74 @@ app.get("/", (req, res) => {
 	try {
 		connection.query(query, (err, result) => {
 			if (err) throw err;
-			console.log(result[0]["count(*)"]);
-			res.send("success");
+			// console.log(result[0]["count(*)"]);
+			let count = result[0]["count(*)"];
+			res.render("home.ejs", {count})
 		});
 	} catch (err) {
 		console.log(err);
 		res.send("Some error in DB")
 	}
 });
+
+// Show users route
+app.get("/user", (req, res) => {
+	// query to show all user only data
+	let query = "SELECT * FROM user";
+	try {
+		connection.query(query, (err, users) => {
+			if (err) throw err;
+			res.render("user.ejs", { users });
+		});
+	} catch (err) {
+		console.log(err);
+		res.send("Some error in DB");
+	}
+});
+
+// Edit Username Route
+app.get("/user/:id/edit", (req, res) => {
+	let { id } = req.params;
+	// find the data for the id we want to edit
+	let query = `SELECT * FROM user WHERE id='${id}'`;
+	try {
+		connection.query(query, (err, result) => {
+			if (err) throw err;
+			let user = result[0];
+			res.render("edit.ejs", { user });
+		});
+	} catch (err) {
+		console.log(err);
+		res.send("Some error in DB");
+	}
+});
+
+// Update in DB
+app.patch("/user/:id", (req, res) => {
+	let { id } = req.params;
+	let {password: formPass, username: newUsername} = req.body;
+	// find the data for the id we want to edit
+	let query = `SELECT * FROM user WHERE id='${id}'`;
+	try {
+		connection.query(query, (err, result) => {
+			if (err) throw err;
+			let user = result[0];
+
+			if(formPass != user.password) {
+				res.send("Incorrect Password")
+			} else {
+				let query2 = `UPDATE user SET username='${newUsername}' WHERE id='${id}'`;
+				connection.query(query2, (err, result) => {
+					if (err) throw err;
+					res.redirect("/user")
+				})
+			}
+		});
+	} catch (err) {
+		console.log(err);
+		res.send("Some error in DB");
+	}
+})
 
 // start server
 app.listen("8080", () => {
