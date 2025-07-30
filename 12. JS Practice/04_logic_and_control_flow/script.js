@@ -23,8 +23,22 @@ Conditional Statements: if, else if, else
 // }
 
 // Falsy Values:    false, 0, '', null, undefined, NaN
-if (0) {
-    console.log("Truthy")
+// if (0) {
+//     console.log("Truthy")
+// } else {
+//     console.log("Falsy")
+// }
+
+
+// Ternary operator
+console.log("\n####### Ternary Operator #######")
+
+const age = 18;
+
+if (age >= 18) {
+    console.log(`if state: True`)
 } else {
-    console.log("Falsy")
+    console.log(`if state: False`)
 }
+
+age >= 18 ? console.log(`Ternary Op: True`) : console.log(`Ternary Op: False`)
