@@ -24,6 +24,10 @@ console.log(uppercasedGuestList)
 const isEthanOnTheList = uppercasedGuestList.includes("ETHAN")
 console.log(`is ETHAN on list: ${isEthanOnTheList}`)
 
-// create a substring of onbly names from list
-const listNames = uppercasedGuestList.split(",")
-console.log(listNames)
+// 4. create a substring of only names from list
+const substringGuests = uppercasedGuestList.slice(16)
+console.log(substringGuests)
+
+// make an array of guest names
+const guests = substringGuests.split(",")
+console.log(guests)
