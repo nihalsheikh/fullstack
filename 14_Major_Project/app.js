@@ -5,6 +5,9 @@ const app = express();
 // 2. require mongoose for db
 const mongoose = require("mongoose");
 
+// 6.6 require out model
+const Listing = require("./models/listing.js");
+
 // 3. start server
 app.listen(8080, () => {
 	console.log("server is listening to port 8080");
@@ -14,6 +17,22 @@ app.listen(8080, () => {
 // 4.1 get request
 app.get("/", (req, res) => {
 	res.send("This is root or home route");
+});
+
+// 6.5 -> 4.2 test your db model connection
+app.get("/testListing", async (req, res) => {
+	let sampleListing = new Listing({
+		title: "Sample Title",
+		description: "Sunt irure qui veniam non sunt proident ea aliqua.",
+		price: 3400,
+		location: "Lonavala, Maharashtra",
+		country: "India",
+	});
+
+	await sampleListing.save();
+	console.log("sample listing was saved");
+	res.send("successful testing")
+
 });
 
 // 5. database connection
