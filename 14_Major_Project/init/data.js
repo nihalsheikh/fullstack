@@ -552,6 +552,573 @@ const sampleListings = [
 		location: "Sedona, AZ 86336",
 		country: "United States",
 	},
+	{
+		title: "Riverside Glass House",
+		description:
+			"Stunning contemporary glass house overlooking rushing river with floor-to-ceiling windows. Modern minimalist design, private deck, and serene water sounds. Perfect for architects and design enthusiasts.",
+		image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80",
+		price: 320,
+		location: "1247 River Bend Drive, Portland, OR 97201",
+		country: "United States",
+	},
+	{
+		title: "Victorian Painted Lady",
+		description:
+			"Beautifully restored 1890s Victorian home with original stained glass windows and ornate woodwork. Period furnishings, claw-foot tub, and historic neighborhood charm.",
+		image: "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=800&q=80",
+		price: 285,
+		location: "678 Painted Lady Lane, San Francisco, CA 94117",
+		country: "United States",
+	},
+	{
+		title: "Desert Sunset Adobe",
+		description:
+			"Authentic southwestern adobe home with spectacular sunset views and outdoor fire pit. Native American art collection, meditation garden, and stargazing deck.",
+		image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80",
+		price: 195,
+		location: "2156 Desert Bloom Road, Santa Fe, NM 87501",
+		country: "United States",
+	},
+	{
+		title: "Floating Boathouse",
+		description:
+			"Unique floating accommodation on calm lake with kayak access and fishing pier. Wake up to loon calls, enjoy morning coffee on water, and experience true lake living.",
+		image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
+		price: 165,
+		location: "Lake Champlain, Vermont, VT 05491",
+		country: "United States",
+	},
+	{
+		title: "Redwood Forest Cabin",
+		description:
+			"Secluded cabin among towering redwoods with hiking trails and natural hot springs nearby. Off-grid solar power, outdoor shower, and forest bathing experiences.",
+		image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80",
+		price: 225,
+		location: "456 Redwood Grove, Mendocino, CA 95460",
+		country: "United States",
+	},
+	{
+		title: "Lighthouse Keeper's Quarters",
+		description:
+			"Historic lighthouse with panoramic ocean views and whale watching opportunities. Maritime museum access, storm watching, and romantic coastal isolation.",
+		image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80",
+		price: 275,
+		location: "789 Beacon Point, Acadia National Park, ME 04609",
+		country: "United States",
+	},
+	{
+		title: "Urban Rooftop Greenhouse",
+		description:
+			"Converted greenhouse loft with living walls and city skyline views. Hydroponic gardens, natural light flooding, and eco-friendly urban living experience.",
+		image: "https://images.unsplash.com/photo-1600573472592-401b489a3cdc?w=800&q=80",
+		price: 245,
+		location: "321 Green Roof Terrace, Brooklyn, NY 11222",
+		country: "United States",
+	},
+	{
+		title: "Prairie Wind Farmhouse",
+		description:
+			"Restored farmhouse on working organic farm with farm-to-table experiences. Collect fresh eggs, milk cows, and enjoy wide-open prairie sunsets and starry nights.",
+		image: "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800&q=80",
+		price: 155,
+		location: "1024 Prairie Wind Road, Kansas, KS 67401",
+		country: "United States",
+	},
+	{
+		title: "Glacier View Lodge",
+		description:
+			"Remote mountain lodge with glacier views and wildlife spotting opportunities. Bear watching, glacier hiking, and authentic Alaskan wilderness immersion.",
+		image: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&q=80",
+		price: 395,
+		location: "Glacier Bay National Park, Alaska, AK 99826",
+		country: "United States",
+	},
+	{
+		title: "Bayou Cypress House",
+		description:
+			"Stilted house deep in Louisiana bayou with alligator tours and Cajun cooking classes. Authentic swamp life, night sounds, and Southern hospitality.",
+		image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&q=80",
+		price: 135,
+		location: "567 Cypress Bayou, Louisiana, LA 70364",
+		country: "United States",
+	},
+	{
+		title: "English Rose Garden Cottage",
+		description:
+			"Charming thatched cottage surrounded by award-winning rose gardens. Traditional English tea service, garden tours, and countryside bicycle rides through rolling hills.",
+		image: "https://images.unsplash.com/photo-1600607688960-e095ff7c02c8?w=800&q=80",
+		price: 175,
+		location: "Rose Garden Lane, Cotswolds, GL56 9AB",
+		country: "United Kingdom",
+	},
+	{
+		title: "Scottish Highland Castle Suite",
+		description:
+			"Luxury suite in 14th-century castle with ghost tours and whisky tastings. Highland games, bagpipe performances, and authentic Scottish clan experiences.",
+		image: "https://images.unsplash.com/photo-1600047509358-9dc75507daeb?w=800&q=80",
+		price: 450,
+		location: "Castle Grounds, Isle of Skye, IV51 9EP",
+		country: "United Kingdom",
+	},
+	{
+		title: "Welsh Dragon's Den Cave",
+		description:
+			"Converted limestone cave with underground river and medieval history. Cave exploration, traditional Welsh harp music, and dragon legend storytelling.",
+		image: "https://images.unsplash.com/photo-1600585154084-fd54c6a65cd0?w=800&q=80",
+		price: 185,
+		location: "Dragon Cave, Brecon Beacons, SA9 1GL",
+		country: "United Kingdom",
+	},
+	{
+		title: "Irish Cliffside Cottage",
+		description:
+			"Windswept cottage on dramatic Atlantic cliffs with traditional Irish music sessions. Sheep herding, Celtic storytelling, and authentic Irish craic experiences.",
+		image: "https://images.unsplash.com/photo-1600566753151-384129cf4e3e?w=800&q=80",
+		price: 165,
+		location: "Cliffs of Moher, County Clare, V95 KNX8",
+		country: "Ireland",
+	},
+	{
+		title: "Amsterdam Canal Penthouse",
+		description:
+			"Luxury penthouse overlooking historic canals with private roof terrace. Bike tours, cheese tastings, and authentic Dutch cultural immersion experiences.",
+		image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
+		price: 295,
+		location: "456 Prinsengracht, Amsterdam, 1016 HH",
+		country: "Netherlands",
+	},
+	{
+		title: "Black Forest Cuckoo Workshop",
+		description:
+			"Traditional wooden house above cuckoo clock workshop with clock-making classes. Forest hiking, traditional German breakfast, and authentic craftsmanship tours.",
+		image: "https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=800&q=80",
+		price: 145,
+		location: "789 Uhrmacher Strasse, Schwarzwald, 78141",
+		country: "Germany",
+	},
+	{
+		title: "Bavarian Beer Garden Lodge",
+		description:
+			"Alpine lodge with private beer garden and Oktoberfest experiences. Traditional lederhosen, brewing workshops, and mountain yodeling performances.",
+		image: "https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=800&q=80",
+		price: 215,
+		location: "234 Bierplatz, Bavaria, 82467",
+		country: "Germany",
+	},
+	{
+		title: "French Lavender Farm Villa",
+		description:
+			"Provençal villa surrounded by purple lavender fields with essential oil workshops. Farmers market visits, painting classes, and aromatherapy experiences.",
+		image: "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=800&q=80",
+		price: 235,
+		location: "Route de Lavande, Provence, 84220",
+		country: "France",
+	},
+	{
+		title: "Normandy Apple Orchard Cottage",
+		description:
+			"Historic cottage in apple orchards with cider making and Calvados distillery tours. D-Day beaches, local markets, and Norman gastronomy experiences.",
+		image: "https://images.unsplash.com/photo-1600607688960-e095ff7c02c8?w=800&q=80",
+		price: 165,
+		location: "567 Pomme Rouge, Normandy, 14230",
+		country: "France",
+	},
+	{
+		title: "Italian Hilltop Monastery",
+		description:
+			"Converted monastery with vineyard views and wine meditation retreats. Gregorian chant sessions, organic gardening, and spiritual renewal experiences.",
+		image: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&q=80",
+		price: 195,
+		location: "Monte Serenità, Tuscany, 53037",
+		country: "Italy",
+	},
+	{
+		title: "Venetian Palace Suite",
+		description:
+			"Opulent palace suite with private gondola access and Murano glass workshop tours. Carnival mask making, opera nights, and authentic Venetian luxury.",
+		image: "https://images.unsplash.com/photo-1600047509358-9dc75507daeb?w=800&q=80",
+		price: 485,
+		location: "888 Palazzo Grande, Venice, 30124",
+		country: "Italy",
+	},
+	{
+		title: "Swiss Cheese Farm Chalet",
+		description:
+			"Working cheese farm chalet with cheese making workshops and fondue evenings. Alpine hiking, cow milking, and traditional Swiss mountain culture.",
+		image: "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800&q=80",
+		price: 255,
+		location: "123 Käse Berg, Gruyères, 1663",
+		country: "Switzerland",
+	},
+	{
+		title: "Austrian Sound of Music Villa",
+		description:
+			"Villa from famous movie with musical tours and Alpine singing lessons. Salzburg old town, classical concerts, and Von Trapp family experiences.",
+		image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80",
+		price: 325,
+		location: "456 Music Villa, Salzburg, 5020",
+		country: "Austria",
+	},
+	{
+		title: "Norwegian Fjord Glass Igloo",
+		description:
+			"Glass igloo with Northern Lights viewing and midnight sun experiences. Husky sledding, ice fishing, and traditional Sami culture immersion.",
+		image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
+		price: 385,
+		location: "789 Aurora Borealis, Tromsø, 9008",
+		country: "Norway",
+	},
+	{
+		title: "Swedish Ice Hotel Suite",
+		description:
+			"Hand-carved ice suite with reindeer fur bedding and ice sculpting workshops. Dog sledding, aurora photography, and traditional Lapland experiences.",
+		image: "https://images.unsplash.com/photo-1600585154084-fd54c6a65cd0?w=800&q=80",
+		price: 425,
+		location: "Ice Palace, Jukkasjärvi, 981 91",
+		country: "Sweden",
+	},
+	{
+		title: "Finnish Sauna Island Cottage",
+		description:
+			"Private island cottage with traditional smoke sauna and ice swimming experiences. Midnight sun, berry picking, and authentic Finnish forest bathing.",
+		image: "https://images.unsplash.com/photo-1600566753151-384129cf4e3e?w=800&q=80",
+		price: 275,
+		location: "Sauna Island, Archipelago Sea, 21600",
+		country: "Finland",
+	},
+	{
+		title: "Danish Hygge Lighthouse",
+		description:
+			"Cozy lighthouse with Danish hygge philosophy and organic garden. Bike tours, pastry workshops, and authentic Danish contentment experiences.",
+		image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80",
+		price: 205,
+		location: "234 Hygge Havn, Bornholm, 3700",
+		country: "Denmark",
+	},
+	{
+		title: "Icelandic Geothermal Cabin",
+		description:
+			"Eco-cabin powered by geothermal energy with private hot springs and glacier tours. Northern Lights viewing, puffin watching, and volcanic adventures.",
+		image: "https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=800&q=80",
+		price: 345,
+		location: "567 Geyser Gardens, Reykjavik, 101",
+		country: "Iceland",
+	},
+	{
+		title: "Spanish Flamenco Patio House",
+		description:
+			"Traditional Andalusian house with flamenco performances and guitar lessons. Tapas tours, olive oil tastings, and authentic Spanish passion experiences.",
+		image: "https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=800&q=80",
+		price: 185,
+		location: "789 Flamenco Plaza, Seville, 41004",
+		country: "Spain",
+	},
+	{
+		title: "Portuguese Fado Music House",
+		description:
+			"Historic house with traditional Fado music evenings and Portuguese guitar workshops. Port wine cellars, ceramic painting, and soulful musical experiences.",
+		image: "https://images.unsplash.com/photo-1600607688960-e095ff7c02c8?w=800&q=80",
+		price: 155,
+		location: "456 Fado Street, Porto, 4050-305",
+		country: "Portugal",
+	},
+	{
+		title: "Greek Island Windmill House",
+		description:
+			"Converted traditional windmill with panoramic Aegean views and olive harvesting experiences. Greek cooking classes, pottery workshops, and island life immersion.",
+		image: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&q=80",
+		price: 225,
+		location: "123 Windmill Hill, Mykonos, 846 00",
+		country: "Greece",
+	},
+	{
+		title: "Turkish Cappadocia Cave Suite",
+		description:
+			"Luxury cave suite with hot air balloon flights and underground city tours. Turkish bath experiences, carpet weaving, and fairy chimney exploration.",
+		image: "https://images.unsplash.com/photo-1600585154084-fd54c6a65cd0?w=800&q=80",
+		price: 195,
+		location: "789 Cave Valley, Cappadocia, 50180",
+		country: "Turkey",
+	},
+	{
+		title: "Croatian Adriatic Villa",
+		description:
+			"Luxury villa with private yacht charter and truffle hunting experiences. Island hopping, wine tastings, and Mediterranean luxury lifestyle immersion.",
+		image: "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=800&q=80",
+		price: 365,
+		location: "456 Adriatic Coast, Dubrovnik, 20000",
+		country: "Croatia",
+	},
+	{
+		title: "Polish Mountain Highlander Hut",
+		description:
+			"Traditional highlander wooden hut with folk music and traditional crafts. Mountain cheese making, folk dancing, and Tatra mountain adventures.",
+		image: "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800&q=80",
+		price: 125,
+		location: "234 Highlander Trail, Zakopane, 34-500",
+		country: "Poland",
+	},
+	{
+		title: "Czech Bohemian Castle Tower",
+		description:
+			"Medieval castle tower with beer brewing workshops and crystal cutting demonstrations. Fairy tale experiences, medieval banquets, and royal treatment.",
+		image: "https://images.unsplash.com/photo-1600047509358-9dc75507daeb?w=800&q=80",
+		price: 285,
+		location: "567 Castle Hill, Český Krumlov, 381 01",
+		country: "Czech Republic",
+	},
+	{
+		title: "Hungarian Thermal Spa Villa",
+		description:
+			"Luxury villa with private thermal pools and traditional Hungarian cuisine experiences. Spa treatments, wine cellars, and healing mineral water therapy.",
+		image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80",
+		price: 215,
+		location: "789 Thermal Springs, Budapest, 1051",
+		country: "Hungary",
+	},
+	{
+		title: "Romanian Carpathian Bear Lodge",
+		description:
+			"Mountain lodge with bear watching tours and traditional Romanian folk experiences. Vampire legends, medieval castles, and Carpathian wilderness adventures.",
+		image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
+		price: 165,
+		location: "123 Bear Mountain, Brașov, 500036",
+		country: "Romania",
+	},
+	{
+		title: "Bulgarian Rose Oil Distillery",
+		description:
+			"Working rose distillery with rose oil production and traditional Bulgarian spa treatments. Rose valley tours, yogurt making, and authentic rural experiences.",
+		image: "https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=800&q=80",
+		price: 95,
+		location: "456 Rose Valley, Karlovo, 4300",
+		country: "Bulgaria",
+	},
+	{
+		title: "Serbian Danube River House",
+		description:
+			"Riverside house with traditional Serbian music and rakija distillery tours. River cruises, folk dancing, and authentic Balkan hospitality experiences.",
+		image: "https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=800&q=80",
+		price: 105,
+		location: "789 Danube Shore, Belgrade, 11000",
+		country: "Serbia",
+	},
+	{
+		title: "Slovenian Emerald River Cabin",
+		description:
+			"Riverside cabin on emerald Soča River with white water rafting and fly fishing. Alpine adventures, beekeeping workshops, and pristine nature experiences.",
+		image: "https://images.unsplash.com/photo-1600566753151-384129cf4e3e?w=800&q=80",
+		price: 175,
+		location: "234 Emerald Valley, Bovec, 5230",
+		country: "Slovenia",
+	},
+	{
+		title: "Moroccan Desert Luxury Camp",
+		description:
+			"Luxury desert camp with camel trekking and traditional Berber experiences. Stargazing, henna painting, and authentic Moroccan hospitality under desert stars.",
+		image: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&q=80",
+		price: 255,
+		location: "567 Sahara Dunes, Merzouga, 52202",
+		country: "Morocco",
+	},
+	{
+		title: "Egyptian Nile Felucca House",
+		description:
+			"Traditional house with felucca sailing and ancient temple tours. Hieroglyph workshops, spice markets, and authentic Egyptian cultural immersion.",
+		image: "https://images.unsplash.com/photo-1600607688960-e095ff7c02c8?w=800&q=80",
+		price: 135,
+		location: "789 Nile View, Aswan, 81511",
+		country: "Egypt",
+	},
+	{
+		title: "Tunisian Medina Riad",
+		description:
+			"Traditional riad in ancient medina with pottery workshops and hammam experiences. Carpet weaving, spice tours, and authentic North African culture.",
+		image: "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800&q=80",
+		price: 115,
+		location: "456 Medina Quarter, Tunis, 1006",
+		country: "Tunisia",
+	},
+	{
+		title: "Palestinian Olive Grove Estate",
+		description:
+			"Beautiful estate surrounded by ancient olive groves with olive oil production tours and traditional Palestinian cuisine. Cultural heritage, handicrafts, and authentic hospitality.",
+		image: "https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=800&q=80",
+		price: 145,
+		location: "789 Olive Hill, Ramallah, West Bank",
+		country: "Palestine",
+	},
+	{
+		title: "Lebanese Cedar Forest Lodge",
+		description:
+			"Mountain lodge among ancient cedar trees with traditional Lebanese meze and oud music. Cedar preservation tours, traditional crafts, and mountain adventures.",
+		image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
+		price: 185,
+		location: "234 Cedar Mountains, Bcharre, 1401",
+		country: "Lebanon",
+	},
+	{
+		title: "Jordanian Petra Cave Hotel",
+		description:
+			"Luxury cave hotel near Petra with archaeological tours and traditional Bedouin experiences. Desert adventures, star gazing, and ancient wonder exploration.",
+		image: "https://images.unsplash.com/photo-1600585154084-fd54c6a65cd0?w=800&q=80",
+		price: 295,
+		location: "567 Petra Valley, Ma'an, 71810",
+		country: "Jordan",
+	},
+	{
+		title: "Japanese Zen Temple Lodge",
+		description:
+			"Traditional temple lodge with meditation retreats and tea ceremony experiences. Cherry blossom gardens, calligraphy classes, and authentic Japanese spirituality.",
+		image: "https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=800&q=80",
+		price: 225,
+		location: "789 Temple Gardens, Kyoto, 604-8301",
+		country: "Japan",
+	},
+	{
+		title: "Korean Hanbok Palace House",
+		description:
+			"Traditional hanok house with hanbok wearing and kimchi making experiences. Palace tours, traditional music, and authentic Korean cultural immersion.",
+		image: "https://images.unsplash.com/photo-1600566753151-384129cf4e3e?w=800&q=80",
+		price: 165,
+		location: "456 Palace District, Seoul, 03045",
+		country: "South Korea",
+	},
+	{
+		title: "Chinese Bamboo Forest Villa",
+		description:
+			"Secluded villa in bamboo forest with tai chi classes and traditional Chinese medicine workshops. Panda sanctuary visits, tea ceremonies, and martial arts.",
+		image: "https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=800&q=80",
+		price: 195,
+		location: "234 Bamboo Grove, Chengdu, 610041",
+		country: "China",
+	},
+	{
+		title: "Thai Floating Market House",
+		description:
+			"Traditional house with floating market access and Thai cooking classes. Longtail boat tours, fruit carving, and authentic Thai river life experiences.",
+		image: "https://images.unsplash.com/photo-1600607688960-e095ff7c02c8?w=800&q=80",
+		price: 125,
+		location: "567 River Market, Bangkok, 10150",
+		country: "Thailand",
+	},
+	{
+		title: "Vietnamese Mountain Coffee Farm",
+		description:
+			"Working coffee plantation with coffee roasting workshops and traditional Vietnamese experiences. Motorbike tours, pho cooking, and mountain village life.",
+		image: "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800&q=80",
+		price: 95,
+		location: "789 Coffee Hills, Da Lat, 670000",
+		country: "Vietnam",
+	},
+	{
+		title: "Indonesian Volcano View Lodge",
+		description:
+			"Mountain lodge with active volcano views and traditional batik workshops. Sunrise hikes, gamelan music, and authentic Indonesian cultural experiences.",
+		image: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&q=80",
+		price: 155,
+		location: "456 Volcano Ridge, Yogyakarta, 55182",
+		country: "Indonesia",
+	},
+	{
+		title: "Malaysian Jungle Canopy Suite",
+		description:
+			"Elevated suite in rainforest canopy with wildlife viewing and indigenous culture experiences. Jungle trekking, traditional crafts, and biodiversity exploration.",
+		image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
+		price: 175,
+		location: "234 Canopy Walk, Taman Negara, 27000",
+		country: "Malaysia",
+	},
+	{
+		title: "Philippine Island Treehouse",
+		description:
+			"Unique treehouse with island hopping and traditional Filipino experiences. Snorkeling, traditional weaving, and authentic island paradise living.",
+		image: "https://images.unsplash.com/photo-1600566753151-384129cf4e3e?w=800&q=80",
+		price: 135,
+		location: "567 Paradise Tree, Bohol, 6300",
+		country: "Philippines",
+	},
+	{
+		title: "Indian Rajasthan Desert Palace",
+		description:
+			"Restored desert palace with camel safaris and traditional Rajasthani experiences. Royal treatment, folk dancing, and authentic Indian hospitality.",
+		image: "https://images.unsplash.com/photo-1600047509358-9dc75507daeb?w=800&q=80",
+		price: 185,
+		location: "789 Desert Palace, Jaisalmer, 345001",
+		country: "India",
+	},
+	{
+		title: "Nepalese Himalayan Monastery",
+		description:
+			"Mountain monastery with meditation retreats and Sherpa culture experiences. Everest views, prayer flag making, and spiritual mountain adventures.",
+		image: "https://images.unsplash.com/photo-1600585154084-fd54c6a65cd0?w=800&q=80",
+		price: 115,
+		location: "456 Monastery Peak, Namche, 56000",
+		country: "Nepal",
+	},
+	{
+		title: "Sri Lankan Tea Estate Bungalow",
+		description:
+			"Colonial tea estate with tea plucking and processing experiences. Highland trains, elephant sanctuaries, and authentic Ceylon tea culture.",
+		image: "https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=800&q=80",
+		price: 145,
+		location: "234 Tea Hills, Nuwara Eliya, 22200",
+		country: "Sri Lanka",
+	},
+	{
+		title: "Australian Outback Homestead",
+		description:
+			"Remote cattle station with horseback riding and authentic Australian bush experiences. Campfire cooking, star gazing, and outback adventure immersion.",
+		image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80",
+		price: 215,
+		location: "567 Red Rock Station, Alice Springs, NT 0870",
+		country: "Australia",
+	},
+	{
+		title: "New Zealand Hobbiton Cottage",
+		description:
+			"Hobbit-inspired cottage with Lord of the Rings tours and sheep farming experiences. Movie locations, adventure sports, and magical Middle-earth adventures.",
+		image: "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800&q=80",
+		price: 245,
+		location: "789 Hobbiton Lane, Matamata, 3400",
+		country: "New Zealand",
+	},
+	{
+		title: "Fijian Overwater Bure",
+		description:
+			"Traditional overwater bure with coral reef snorkeling and kava ceremonies. Fire dancing, traditional fishing, and authentic Fijian island paradise.",
+		image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
+		price: 395,
+		location: "456 Coral Bay, Mamanuca Islands, Fiji",
+		country: "Fiji",
+	},
+	{
+		title: "Tahitian Black Pearl Farm",
+		description:
+			"Overwater accommodation at pearl farm with traditional Polynesian experiences. Pearl diving, traditional dancing, and authentic South Pacific culture.",
+		image: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&q=80",
+		price: 485,
+		location: "234 Pearl Lagoon, Tahiti, 98714",
+		country: "French Polynesia",
+	},
+	{
+		title: "Canadian Igloo Village",
+		description:
+			"Authentic igloo accommodation with aurora viewing and traditional Inuit experiences. Dog sledding, ice fishing, and Arctic survival adventures.",
+		image: "https://images.unsplash.com/photo-1600585154084-fd54c6a65cd0?w=800&q=80",
+		price: 365,
+		location: "567 Aurora Village, Nunavut, X0A 0H0",
+		country: "Canada",
+	},
+	{
+		title: "Mexican Cenote Cave House",
+		description:
+			"Unique house built around natural cenote with Mayan culture experiences. Cave diving, traditional ceremonies, and authentic Mexican jungle adventures.",
+		image: "https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=800&q=80",
+		price: 225,
+		location: "789 Cenote Azul, Tulum, 77780",
+		country: "Mexico",
+	},
 ];
 
 module.exports = { data: sampleListings }; // accessing key 'data'

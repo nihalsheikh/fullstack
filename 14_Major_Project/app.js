@@ -8,10 +8,17 @@ const mongoose = require("mongoose");
 // 6.6 require out model
 const Listing = require("./models/listing.js");
 
+// 8.3 require ejs path for showcasing our data in a template
+const path = require("path");
+
 // 3. start server
 app.listen(8080, () => {
 	console.log("server is listening to port 8080");
 });
+
+// 8.4 set view engine
+app.set("view engine", "ejs");
+app.set("views", path.join(__dirname, "views"));
 
 // 4. create an API
 // 4.1 get request
@@ -20,19 +27,26 @@ app.get("/", (req, res) => {
 });
 
 // 6.5 -> 4.2 test your db model connection
-app.get("/testListing", async (req, res) => {
-	let sampleListing = new Listing({
-		title: "Sample Title",
-		description: "Sunt irure qui veniam non sunt proident ea aliqua.",
-		price: 3400,
-		location: "Lonavala, Maharashtra",
-		country: "India",
-	});
+// app.get("/testListing", async (req, res) => {
+// 	let sampleListing = new Listing({
+// 		title: "Sample Title",
+// 		description: "Sunt irure qui veniam non sunt proident ea aliqua.",
+// 		price: 3400,
+// 		location: "Lonavala, Maharashtra",
+// 		country: "India",
+// 	});
 
-	await sampleListing.save();
-	console.log("sample listing was saved");
-	res.send("successful testing")
+// 	await sampleListing.save();
+// 	console.log("sample listing was saved");
+// 	res.send("successful testing")
 
+// });
+
+// 8. New Route:
+// 8.1 Index Route
+app.get("/listings", async (req, res) => {
+	const allListings = await Listing.find({});
+	res.render("listings/index.ejs", { allListings });
 });
 
 // 5. database connection
