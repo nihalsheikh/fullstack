@@ -20,6 +20,9 @@ app.listen(8080, () => {
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
 
+// 9.2 Listing visiting URL Encoded
+app.use(express.urlencoded({ extended: true }));
+
 // 4. create an API
 // 4.1 get request
 app.get("/", (req, res) => {
@@ -42,11 +45,39 @@ app.get("/", (req, res) => {
 
 // });
 
-// 8. New Route:
-// 8.1 Index Route
+// 8. Show All Route:
+// 8.1 Index Route: Show all the listings
 app.get("/listings", async (req, res) => {
 	const allListings = await Listing.find({});
 	res.render("listings/index.ejs", { allListings });
+});
+
+// Placing step 10 above step 9: it was causing error, in which link was confused between "/new" and "/:id"
+// 10 NEW and CREATE Route
+// 10.1 NEW Route: to create a new listing go to a form
+app.get("/listings/new", (req, res) => {
+	res.render("listings/new.ejs");
+});
+
+// 9. Single Listing Route
+// 9.1 Show Route: Show data for the listing clicked/visited
+app.get("/listings/:id", async (req, res) => {
+	let { id } = req.params;
+
+	// 9.3 Find the listing in db
+	const listing = await Listing.findById(id);
+
+	// 9.4 Render the lisitng details in EJS template
+	res.render("listings/show.ejs", { listing });
+});
+
+// 10.2 CREATE Route: to accept a POST request, that will make changes into our db
+app.post("/listings", async (req, res) => {
+	// let { title, description, image, price, location, country } = req.body;
+	const newListing = new Listing(req.body.listing);
+	await newListing.save();
+	// console.log(listing);
+	res.redirect("/listings");
 });
 
 // 5. database connection
