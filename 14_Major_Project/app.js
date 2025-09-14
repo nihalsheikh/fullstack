@@ -80,6 +80,12 @@ app.post("/listings", async (req, res) => {
 	res.redirect("/listings");
 });
 
+// 11. UPDATE Route: we will make 2 routes: EDIT and UPDATE
+// 11.2 EDIT Route
+app.get("/listings/:id/edit", (req, res) => {
+	
+})
+
 // 5. database connection
 // 5.1 test db connection in terminal. make sure it's enabled and started
 /* 5.2 make a test url for application and pass this variable to mongoose.connect
